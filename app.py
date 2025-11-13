@@ -1,5 +1,3 @@
-pip install openai streamlit
-
 import streamlit as st
 import pandas as pd
 from openai import OpenAI
@@ -90,5 +88,6 @@ if st.button("Ask the model"):
         answer = response.choices[0].message.content
         st.success("✅ Model answer:")
         st.write(answer)
+
 
 
